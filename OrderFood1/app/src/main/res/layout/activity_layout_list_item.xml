@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:weightSum="4"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="500px"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_width="0dp"
+        android:layout_height="300px">
+        <ImageView
+            android:id="@+id/FoodImages"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+        <TextView
+            android:id="@+id/FoodLocation"
+            android:layout_height="0px"
+            android:layout_width="0px"
+            android:visibility="invisible"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        android:layout_width="0dp"
+        android:layout_height="300px">
+        <TextView
+            android:id="@+id/FoodName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="25sp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:id="@+id/FoodLink"
+            android:layout_width="0px"
+            android:layout_height="0px"
+            android:visibility="invisible"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="300px">
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+</LinearLayout>

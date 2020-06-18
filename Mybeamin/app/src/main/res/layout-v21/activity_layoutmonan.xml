@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.layoutmonan">
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawerdsmonan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="#3F51B5"
+                android:id="@+id/toolbamonan"
+                android:title="Món ăn"
+                app:title="Món ăn">
+            </androidx.appcompat.widget.Toolbar>
+            <ScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="334dp">
+                <ImageView
+                    android:id="@+id/anhbiadoan"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/anh_1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints"></ImageView>
+
+                <LinearLayout
+                    android:layout_width="412dp"
+                    android:layout_height="91dp"
+                    android:layout_marginTop="244dp"
+                    android:background="@drawable/bong"
+                    android:gravity="center|left"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/anhbiadoan"
+                    tools:ignore="MissingConstraints">
+
+                    <TextView
+                        android:layout_width="179dp"
+                        android:layout_height="69dp"
+                        android:gravity="center"
+                        android:text="Thời gian mở cửa :"
+                        android:textSize="18dp"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="69dp"
+                        android:gravity="center"
+                        android:text="08:00AM"
+                        android:textSize="18dp"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="69dp"
+                        android:gravity="center"
+                        android:text="  -  "
+                        android:textSize="18dp"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="69dp"
+                        android:gravity="center"
+                        android:text="10:00PM"
+                        android:textSize="18dp"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="333dp"
+                    android:layout_height="147dp"
+                    android:layout_marginTop="116dp"
+                    android:background="@drawable/bong"
+                    android:gravity="center|top"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/anhbiadoan"
+                    tools:ignore="MissingConstraints">
+
+                    <TextView
+                        android:layout_width="179dp"
+                        android:layout_height="56dp"
+                        android:gravity="center"
+                        android:text="Đối tác của BeaMin"
+                        android:textColor="#03A9F4"
+                        android:textSize="18dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/tenquan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Cơm bố già "
+                        android:textSize="25dp"
+                        android:textStyle="bold"></TextView>
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <ListView
+                        android:id="@+id/listviewmonan"
+                        android:layout_width="match_parent"
+                        android:layout_height="259dp"></ListView>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+        <com.google.android.material.navigation.NavigationView
+            android:layout_marginTop="150dp"
+            android:layout_width="match_parent"
+            android:id="@+id/navimonan"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content">
+            <ScrollView
+                android:id="@+id/scrollViewư"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:paddingTop="10dp"
+                android:gravity="center"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/truycaptrangwebmonan"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/xoaphong"
+                    android:text="Truy Cập Trang Web"
+                    android:textColor="#03A9F4"
+                    android:textSize="18dp"
+                    android:textStyle="italic"></Button>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:padding="10dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tengiohang"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:gravity="center"
+                    android:text="cơm Gà chiên xối mỡ "
+                    android:textSize="30dp"
+                    android:textStyle="bold"></TextView>
+                <TextView
+                    android:layout_marginLeft="3dp"
+                    android:background="@drawable/vach"
+                    android:layout_width="200dp"
+                    android:layout_height="1.5dp"
+                    ></TextView>
+
+                <TextView
+                    android:gravity="center"
+                    android:id="@+id/giatien"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:padding="5dp"
+                    android:text="70000"
+                    android:textSize="25dp"></TextView>
+            </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    ;
+                    <Button
+                        android:id="@+id/giam"
+                        android:textSize="40dp"
+                        android:text="-"
+                        android:layout_width="75dp"
+                        android:layout_height="77dp"
+                        android:background="@drawable/giam"></Button>
+                    <TextView
+                        android:id="@+id/soluong"
+                        android:gravity="center"
+                        android:layout_width="96dp"
+                        android:layout_height="73dp"
+                        android:padding="5dp"
+                        android:text="1"
+                        android:textSize="25dp"></TextView>
+                    <Button
+                        android:id="@+id/tang"
+                        android:textSize="40dp"
+                        android:text="+"
+                        android:layout_width="75dp"
+                        android:layout_height="77dp"
+                        android:background="@drawable/giam"></Button>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/themgiohang"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/buton"
+                    android:layout_marginBottom="30dp"
+                    android:text="Thêm vào giỏ "
+                    android:textSize="40dp"></Button>
+            </LinearLayout>
+        </ScrollView>
+        </com.google.android.material.navigation.NavigationView>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+</LinearLayout>

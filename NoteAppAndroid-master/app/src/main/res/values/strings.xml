@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">MyNote</string>
+    <string name="note_title">Title</string>
+    <string name="note_content">Content</string>
+    <string name="note_id">Id</string>
+
+    <string name="notepad_title">Your title</string>
+    <string name="notepad_content">Type your note ....</string>
+
+    <string name="notepad_id">Id</string>
+
+    <string name="notepad_btnReturn">Back</string>
+    <string name="notepad_btnSave">Save</string>
+    <string name="notepad_btnCreate">Create</string>
+
+    <string name="title">List of notes</string>
+    <string name="delete_note">Delete this note</string>
+    <string name="open_note">Open this note</string>
+
+
+    <string name="new_note">New note</string>
+    <string name="about_us">About us</string>
+</resources>
