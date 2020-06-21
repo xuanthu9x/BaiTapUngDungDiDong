@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Spinner
+        android:id="@+id/NationalFirst"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:dropDownWidth="wrap_content"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@+id/from"
+        android:layout_marginTop="25dp"
+        app:layout_constraintLeft_toLeftOf="@+id/from"
+        />
+
+    <Spinner
+        android:id="@+id/NationalSecond"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/to"
+        android:layout_marginTop="25dp"
+        app:layout_constraintLeft_toLeftOf="@+id/NationalFirst"/>
+
+    <EditText
+        android:id="@+id/MoneyStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="22sp"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@+id/NationalFirst"
+        android:layout_marginTop="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="70dp"
+        />
+    <TextView
+        android:id="@+id/MoneyEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="22sp"
+        android:inputType="numberSigned"
+        app:layout_constraintTop_toBottomOf="@+id/NationalSecond"
+        android:layout_marginTop="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="70dp"
+         />
+
+    <Button
+        android:id="@+id/Exchange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convert"
+        app:layout_constraintTop_toBottomOf="@+id/MoneyEnd"
+        android:layout_marginTop="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="160dp"/>
+
+    <TextView
+        android:id="@+id/from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="80dp"
+        android:text="From"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tenUD"
+       />
+
+    <TextView
+        android:id="@+id/to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        app:layout_constraintTop_toBottomOf="@+id/MoneyStart"
+        android:layout_marginTop="40dp"
+        app:layout_constraintLeft_toLeftOf="@+id/from"
+        />
+
+    <TextView
+        android:id="@+id/tenUD"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="Ứng dụng đổi tiền"
+        android:background="#B9BDBD"
+        android:textColor="#090909"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

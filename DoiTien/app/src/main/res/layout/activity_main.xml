@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="90dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="40dp"
+        />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="85dp"
+        app:layout_constraintLeft_toLeftOf="@+id/spinner"
+        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+    <EditText
+        android:id="@+id/edt"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Nhập số tiền cần đổi"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/spinner"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="70dp"/>
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        app:layout_constraintTop_toBottomOf="@+id/spinner2"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="@+id/edt"
+        />
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/txt"
+        android:layout_marginTop="10dp"
+        android:text="Đổi"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="160dp"
+        />
+
+    <TextView
+        android:id="@+id/txtV"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="Ứng dụng đổi tiền"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="#B3B3B2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:id="@+id/txtLS"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:text="Lịch sử đổi"
+        android:textSize="20sp"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="@+id/spinner2"
+        app:layout_constraintTop_toBottomOf="@+id/btn"
+        android:layout_marginTop="10dp"/>
+
+    <ListView
+        android:id="@+id/listV"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtLS"
+        app:layout_constraintVertical_bias="0.926"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
